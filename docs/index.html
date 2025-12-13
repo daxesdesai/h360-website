@@ -54,34 +54,106 @@
             <div class="hero-image">
                 <div class="phone-mockup">
                     <div class="phone-screen">
-                        <div class="app-preview">
-                            <div class="preview-header">
-                                <span class="greeting">Good morning!</span>
-                                <span class="date">Today's Progress</span>
+                        <div class="app-preview light">
+                            <!-- App Header -->
+                            <div class="app-header">
+                                <span class="app-logo">H360°</span>
+                                <div class="streak-badge">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                                        <path d="M12 23c-3.9 0-7-3.1-7-7 0-2.8 1.6-5.2 4-6.3V9c0-3.3 2.7-6 6-6 1.1 0 2 .9 2 2v1c0 .6-.4 1-1 1s-1-.4-1-1V5c-2.2 0-4 1.8-4 4v1.5c0 .4-.2.8-.6.9C8.5 12.1 7 14.4 7 17c0 2.8 2.2 5 5 5s5-2.2 5-5c0-1.4-.6-2.7-1.6-3.6-.4-.4-.4-1 0-1.4s1-.4 1.4 0c1.4 1.3 2.2 3.1 2.2 5 0 3.9-3.1 7-7 7z"/>
+                                    </svg>
+                                    <span>0</span>
+                                </div>
                             </div>
-                            <div class="calories-ring">
-                                <div class="ring-outer">
-                                    <div class="ring-inner">
-                                        <span class="cal-number">1,420</span>
-                                        <span class="cal-label">/ 2,000 cal</span>
+                            <!-- Day Selector -->
+                            <div class="day-selector">
+                                <div class="day active">
+                                    <span class="day-name">Fri</span>
+                                    <span class="day-num">12</span>
+                                </div>
+                                <div class="day">
+                                    <span class="day-name">Sat</span>
+                                    <span class="day-num">13</span>
+                                </div>
+                                <div class="day">
+                                    <span class="day-name">Sun</span>
+                                    <span class="day-num">14</span>
+                                </div>
+                                <div class="day">
+                                    <span class="day-name">Mon</span>
+                                    <span class="day-num">15</span>
+                                </div>
+                            </div>
+                            <!-- Calories Card -->
+                            <div class="calories-card">
+                                <div class="calories-info">
+                                    <span class="cal-number">2000</span>
+                                    <span class="cal-label">Calories left</span>
+                                    <div class="cal-meta">
+                                        <span>+0</span>
+                                        <span>-0</span>
+                                    </div>
+                                </div>
+                                <div class="calories-ring">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="40" fill="none" stroke="#F3F4F6" stroke-width="8"/>
+                                    </svg>
+                                    <div class="ring-icon">
+                                        <svg viewBox="0 0 24 24" fill="#1F2937" width="24" height="24">
+                                            <path d="M12 23c-3.9 0-7-3.1-7-7 0-2.8 1.6-5.2 4-6.3V9c0-3.3 2.7-6 6-6 1.1 0 2 .9 2 2v1c0 .6-.4 1-1 1s-1-.4-1-1V5c-2.2 0-4 1.8-4 4v1.5c0 .4-.2.8-.6.9C8.5 12.1 7 14.4 7 17c0 2.8 2.2 5 5 5s5-2.2 5-5c0-1.4-.6-2.7-1.6-3.6-.4-.4-.4-1 0-1.4s1-.4 1.4 0c1.4 1.3 2.2 3.1 2.2 5 0 3.9-3.1 7-7 7z"/>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
-                            <div class="macro-bars">
-                                <div class="macro">
-                                    <span class="macro-name">Protein</span>
-                                    <div class="bar"><div class="fill" style="width: 65%"></div></div>
-                                    <span class="macro-value">78g</span>
+                            <!-- Macro Cards -->
+                            <div class="macro-cards">
+                                <div class="macro-card">
+                                    <span class="macro-value">150g</span>
+                                    <span class="macro-label">Protein left</span>
+                                    <div class="macro-ring protein">
+                                        <svg viewBox="0 0 60 60">
+                                            <circle cx="30" cy="30" r="24" fill="none" stroke="#F3F4F6" stroke-width="5"/>
+                                        </svg>
+                                        <span class="macro-icon protein-icon"></span>
+                                    </div>
                                 </div>
-                                <div class="macro">
-                                    <span class="macro-name">Carbs</span>
-                                    <div class="bar carbs"><div class="fill" style="width: 45%"></div></div>
-                                    <span class="macro-value">156g</span>
+                                <div class="macro-card">
+                                    <span class="macro-value">200g</span>
+                                    <span class="macro-label">Carbs left</span>
+                                    <div class="macro-ring carbs">
+                                        <svg viewBox="0 0 60 60">
+                                            <circle cx="30" cy="30" r="24" fill="none" stroke="#F3F4F6" stroke-width="5"/>
+                                        </svg>
+                                        <span class="macro-icon carbs-icon"></span>
+                                    </div>
                                 </div>
-                                <div class="macro">
-                                    <span class="macro-name">Fat</span>
-                                    <div class="bar fat"><div class="fill" style="width: 55%"></div></div>
-                                    <span class="macro-value">48g</span>
+                                <div class="macro-card">
+                                    <span class="macro-value">65g</span>
+                                    <span class="macro-label">Fat left</span>
+                                    <div class="macro-ring fat">
+                                        <svg viewBox="0 0 60 60">
+                                            <circle cx="30" cy="30" r="24" fill="none" stroke="#F3F4F6" stroke-width="5"/>
+                                        </svg>
+                                        <span class="macro-icon fat-icon"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bottom Nav -->
+                            <div class="app-nav">
+                                <div class="nav-item active">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                                </div>
+                                <div class="nav-item">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.5 18.5l6-6 4 4L22 6.92 20.59 5.5l-7.09 8-4-4L2 17l1.5 1.5z"/></svg>
+                                </div>
+                                <div class="nav-item add-btn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                                </div>
+                                <div class="nav-item">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                                </div>
+                                <div class="nav-item">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
                                 </div>
                             </div>
                         </div>
