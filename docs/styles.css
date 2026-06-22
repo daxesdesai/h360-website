@@ -96,7 +96,17 @@ p{margin:0}
   background:#000;
 }
 .video-card video{width:100%;height:100%;object-fit:cover;display:block}
-.video-card::after{content:"";position:absolute;inset:0;border-radius:30px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.video-card::after{content:"";position:absolute;inset:0;border-radius:30px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06);pointer-events:none}
+.sound-toggle{position:absolute;bottom:14px;right:14px;z-index:4;display:inline-flex;align-items:center;justify-content:center;height:42px;min-width:42px;padding:0;border-radius:999px;background:rgba(0,0,0,.5);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.28);color:#fff;cursor:pointer;transition:padding .25s ease,background .2s ease}
+.sound-toggle:hover{background:rgba(0,0,0,.7)}
+.sound-toggle svg{width:20px;height:20px}
+.sound-toggle .i-on{display:none}
+.sound-toggle.on .i-off{display:none}
+.sound-toggle.on .i-on{display:block}
+.sound-toggle .tip{font-size:12.5px;font-weight:700;white-space:nowrap;max-width:0;overflow:hidden;opacity:0;transition:max-width .25s ease,opacity .2s ease,margin .25s ease}
+.sound-toggle:hover .tip,.sound-toggle:focus-visible .tip{max-width:130px;opacity:1;margin-left:8px}
+.sound-toggle.hint{animation:soundpulse 2.4s ease-in-out 3}
+@keyframes soundpulse{0%,100%{box-shadow:0 0 0 0 rgba(242,100,27,.0)}50%{box-shadow:0 0 0 6px rgba(242,100,27,.35)}}
 
 /* ===== generic section ===== */
 .section{padding:96px 0;position:relative}

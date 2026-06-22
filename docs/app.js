@@ -35,6 +35,21 @@
     reveals.forEach(function (el) { io.observe(el); });
   }
 
+  // hero video sound toggle (autoplay must be muted; user taps to enable sound)
+  var hv = document.getElementById('heroVideo');
+  var st = document.getElementById('soundToggle');
+  if (hv && st) {
+    if (!reduce) st.classList.add('hint');
+    st.addEventListener('click', function () {
+      hv.muted = !hv.muted;
+      if (!hv.muted) { hv.volume = 1; var p = hv.play(); if (p && p.catch) p.catch(function () {}); }
+      st.classList.remove('hint');
+      st.classList.toggle('on', !hv.muted);
+      st.setAttribute('aria-pressed', String(!hv.muted));
+      st.setAttribute('aria-label', hv.muted ? 'Unmute video' : 'Mute video');
+    });
+  }
+
   // lazy-load + autoplay the cinematic band only when in view
   var film = document.getElementById('filmVideo');
   if (film && 'IntersectionObserver' in window) {

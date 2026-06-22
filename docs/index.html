@@ -66,8 +66,13 @@
       </div>
       <div class="hero-media">
         <div class="video-card reveal">
-          <video src="/assets/video/hero-phone.mp4" poster="/assets/img/hero-phone-poster.jpg"
+          <video id="heroVideo" src="/assets/video/hero-phone.mp4" poster="/assets/img/hero-phone-poster.jpg"
                  autoplay muted loop playsinline preload="auto"></video>
+          <button class="sound-toggle" id="soundToggle" aria-label="Unmute video" aria-pressed="false">
+            <svg class="i-off" viewBox="0 0 24 24" fill="currentColor"><path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/><line x1="3" y1="3" x2="21" y2="21" stroke="currentColor" stroke-width="2"/></svg>
+            <svg class="i-on" viewBox="0 0 24 24" fill="currentColor"><path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>
+            <span class="tip">Tap for sound</span>
+          </button>
         </div>
       </div>
     </div>
